@@ -28,6 +28,46 @@ NarratoAI 是一款自动化影视解说工具，基于 LLM 实现文案撰写�
 
 </div>
 
+## 重磅福利 🎉
+
+### APIMart
+
+感谢 APIMart 赞助了本项目！APIMart 是专注 AI 图片/视频生成的低价 API 平台，GPT-Image-2 低至 $0.006/张，1 美元可出图 160+ 张。图片、视频一套异步 API 通吃，提交任务拿 ID、回调取结果，跑批万张不超时、换模型不改代码。按量付费、无月费，通过[此注册链接](https://go.apimart.ai/gh-narratoai)注册即可开用。
+
+<a href="https://go.apimart.ai/gh-narratoai">
+  <img src="docs/apimart.png" alt="APIMart" style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
+> 即日起全面支持硅基流动！注册即享2000万免费Token（价值16元平台配额），剪辑10分钟视频仅需0.1元！  
+> 
+> 🔥 快速领福利：  
+> 1️⃣ 点击链接注册：https://cloud.siliconflow.cn/i/MI9PgHwB  
+> 2️⃣ 使用手机号登录，**务必填写邀请码：MI9PgHwB**  
+> 3️⃣ 领取16元配额，极速体验高性价比AI剪辑  
+> 
+> 💡 小成本大创作：  
+> 硅基流动API Key一键接入，智能剪辑效率翻倍！  
+> （注：邀请码为福利领取唯一凭证，注册后自动到账）  
+> 
+> 立即行动，用「MI9PgHwB」解锁你的AI生产力！
+
+## ⚠️谨防被骗 📢
+
+> 🔎 名称辨析：[**NarratoAI 与 NarratorAI 项目关系、开源范围与使用方式说明**](https://github.com/linyqh/NarratoAI/wiki/NarratoAI-%E4%B8%8E-NarratorAI-%E9%A1%B9%E7%9B%AE%E5%85%B3%E7%B3%BB%E5%92%8C%E5%8C%BA%E5%88%AB)
+
+_**1. NarratoAI 是一款完全免费的软件，近期在社交媒体(抖音,B站等)上发现，有人将 NarratoAI 改名后售卖，下面是部分截图，请大家务必提高警惕，切勿上当受骗**_
+
+---
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/9cc0e5e4-bd5b-4655-b5ef-7d9085cdbc50" alt="诈骗截图 1" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/464b877c-b061-4856-8260-a0ef6fad7e52" alt="诈骗截图 2" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/9d7a6ea9-4bca-42b5-a61e-7e464037930f" alt="诈骗截图 3" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/09eeb94d-c670-4d7d-ba19-c0468bed3291" alt="诈骗截图 4" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+</div>
+
+---
+
 ## 最新资讯
 - 2026.07.16 发布新版本 0.8.6，新增可选的 **Sonilo AI 配乐**，支持 Apple Silicon 的 **IndexTTS-1.5 MLX**，更新 IndexTTS-2 MLX API 适配，并补充 OmniVoice 部署包下载入口
 - 2026.07.13 发布新版本 0.8.5，完善 `uv` + Python 3.12 本地运行流程，新增一键清理系统缓存和自定义 OpenAI 兼容 Base URL 的格式校验与 API Key 风险提示，并优化短脚本解析、字幕预览和音频设置的跨平台兼容性
@@ -52,45 +92,9 @@ NarratoAI 是一款自动化影视解说工具，基于 LLM 实现文案撰写�
 
 | 功能 | 说明 |
 | --- | --- |
-| Sonilo AI 配乐 | 在 WebUI 的背景音乐来源中选择“AI 生成配乐（Sonilo）”，即可根据画面内容和剪辑节奏生成配乐。该功能默认关闭，需自行配置 [Sonilo](https://sonilo.com) API Key；当前支持最长 6 分钟的视频，生成失败时会自动回退到随机背景音乐，不中断成片任务。 |
 | IndexTTS-1.5 macOS | 新增面向 Apple Silicon 的 MLX 本地语音克隆引擎，可上传或从资源目录选择参考音频。[下载部署包](https://cutagent.online/resources/indextts15-mlx-macos) |
 | IndexTTS-2 MLX | 更新 MLX Pack API 适配，支持参考音频、情感控制、随机种子和更完整的生成参数。[macOS 部署包](https://cutagent.online/resources/indextts2-full-macos)（Windows 版本待更新） |
 | OmniVoice | 补充 OmniVoice-Pack 部署包下载入口；该引擎支持自动音色、指令音色和参考音频克隆。[macOS 部署包](https://cutagent.online/resources/omnivoice-macos) / [Windows 部署包](https://cutagent.online/resources/omnivoice-windows) |
-
-> 使用 Sonilo AI 配乐时，合成完成且尚未添加背景音乐的视频会上传至 Sonilo API。请在启用前确认视频内容符合相关服务条款与隐私要求；生成音乐的授权和商用范围以 Sonilo 最新条款为准。
-
-## 重磅福利 🎉
-
-> 即日起全面支持硅基流动！注册即享2000万免费Token（价值16元平台配额），剪辑10分钟视频仅需0.1元！  
-> 
-> 🔥 快速领福利：  
-> 1️⃣ 点击链接注册：https://cloud.siliconflow.cn/i/MI9PgHwB  
-> 2️⃣ 使用手机号登录，**务必填写邀请码：MI9PgHwB**  
-> 3️⃣ 领取16元配额，极速体验高性价比AI剪辑  
-> 
-> 💡 小成本大创作：  
-> 硅基流动API Key一键接入，智能剪辑效率翻倍！  
-> （注：邀请码为福利领取唯一凭证，注册后自动到账）  
-> 
-> 立即行动，用「MI9PgHwB」解锁你的AI生产力！
-
-
-## ⚠️谨防被骗 📢
-
-> 🔎 名称辨析：[**NarratoAI 与 NarratorAI 项目关系、开源范围与使用方式说明**](https://github.com/linyqh/NarratoAI/wiki/NarratoAI-%E4%B8%8E-NarratorAI-%E9%A1%B9%E7%9B%AE%E5%85%B3%E7%B3%BB%E5%92%8C%E5%8C%BA%E5%88%AB)
-
-_**1. NarratoAI 是一款完全免费的软件，近期在社交媒体(抖音,B站等)上发现，有人将 NarratoAI 改名后售卖，下面是部分截图，请大家务必提高警惕，切勿上当受骗**_
-
----
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/9cc0e5e4-bd5b-4655-b5ef-7d9085cdbc50" alt="诈骗截图 1" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/464b877c-b061-4856-8260-a0ef6fad7e52" alt="诈骗截图 2" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/9d7a6ea9-4bca-42b5-a61e-7e464037930f" alt="诈骗截图 3" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/09eeb94d-c670-4d7d-ba19-c0468bed3291" alt="诈骗截图 4" style="width: 23%; max-width: 250px; height: auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
-</div>
-
----
 
 ## 未来计划 🥳
 - [x] windows 整合包发布
